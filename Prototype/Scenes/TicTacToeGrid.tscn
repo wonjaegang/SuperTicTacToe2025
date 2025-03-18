@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://cu6hc5h5p2o8c"]
+
+[ext_resource type="Script" path="res://Prototype/Scripts/TicTacToeGrid.gd" id="1_4ae20"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cyqbq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p6cke"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o8q4j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sdck8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n0vii"]
+
+[node name="TicTacToeGrid" type="Button"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 102.0
+offset_top = 166.0
+offset_right = -559.0
+offset_bottom = -1377.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cyqbq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_p6cke")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_o8q4j")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sdck8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_n0vii")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("1_4ae20")
+
+[node name="Marker" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.2
+anchor_right = 0.8
+anchor_bottom = 0.8
+expand_mode = 1
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
