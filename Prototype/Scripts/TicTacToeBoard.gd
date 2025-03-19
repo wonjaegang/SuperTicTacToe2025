@@ -22,10 +22,13 @@ func _process(delta):
 func _on_grid_set_finished(row:int, column:int, grid:Button):
     state[row][column] = grid.state
     var winner = Global.check_board_winner(state)
-    print(state, winner)
     if winner == 1:
+        $Mask.visible = true
+        $Marker.visible = true
         $Marker.texture = Global.marker_1
     elif winner == 2:
+        $Mask.visible = true
+        $Marker.visible = true
         $Marker.texture = Global.marker_2
     else:
         pass

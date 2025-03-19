@@ -9,7 +9,7 @@ func _ready():
         var column = boardIndex % 3
         var board = board_scene.instantiate()
         board.board_set_finished.connect(_on_board_set_finished.bind(row, column, board))              
-        #$AspectRatioContainer$GridContainer.add_child(board)
+        $AspectRatioContainer/GridContainer.add_child(board)
        
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
