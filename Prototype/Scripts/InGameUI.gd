@@ -1,5 +1,9 @@
 extends Control
 
+var winner
+var state = [[0, 0, 0],
+             [0, 0, 0],
+             [0, 0, 0]]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,4 +21,17 @@ func _process(delta):
     pass
     
 func _on_board_set_finished(row:int, column:int, board:Panel):
+    state[row][column] = board.winner
+    winner = Global.check_board_winner(state)
+    
+    if winner:
+        pass
+    
+    
+    
+    
+    
+    
+    
+    
     Global.turn = (Global.turn - 1) * -1 + 2  # 2 -> 1, 1 -> 2
