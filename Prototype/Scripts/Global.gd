@@ -1,7 +1,7 @@
 extends Node
 
-var marker_1 = load("res://Prototype/Resources/BlueMarker.png")
-var marker_2 = load("res://Prototype/Resources/RedMarker.png")
+var marker_1 = load("res://Prototype/Resources/RedMarker.png")
+var marker_2 = load("res://Prototype/Resources/BlueMarker.png")
 
 var userTrun = true
 var turn = 1

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bqpuckvhy7bvi"]
 
-[ext_resource type="Script" uid="uid://dokn8kgmeoukt" path="res://Prototype/Scripts/TicTacToeBoard.gd" id="1_w52k4"]
+[ext_resource type="Script" path="res://Prototype/Scripts/TicTacToeBoard.gd" id="1_w52k4"]
 [ext_resource type="PackedScene" uid="uid://dbd4q6oaqlqgi" path="res://Prototype/Scenes/GridLine.tscn" id="2_q5fle"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_thqex"]

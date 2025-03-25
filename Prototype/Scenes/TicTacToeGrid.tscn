@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cu6hc5h5p2o8c"]
 
-[ext_resource type="Script" uid="uid://bxljep281y67g" path="res://Prototype/Scripts/TicTacToeGrid.gd" id="1_4ae20"]
+[ext_resource type="Script" path="res://Prototype/Scripts/TicTacToeGrid.gd" id="1_4ae20"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cyqbq"]
 
